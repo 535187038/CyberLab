@@ -36,7 +36,7 @@ def driver() -> webdriver.Remote:
             driver.quit()
 
 
-class TestExample:
+class TestExample1:
 
     def test_app_is_open1(self, driver):
         """Test Case 1: Check if the App is on the main page"""
