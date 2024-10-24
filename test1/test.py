@@ -38,7 +38,7 @@ def driver() -> webdriver.Remote:
 
 class TestExample:
 
-    def test_app_is_open(self, driver):
+    def test_app_is_open1(self, driver):
         """Test Case 1: Check if the App is on the main page"""
         # HINT: use resource id to locate the element
         target_resource_id = "com.pax.us.pay.std.cyberlab:id/et_amount_prompt"
@@ -49,11 +49,11 @@ class TestExample:
 
         assert text == target_text
 
-    def test_case2(self, driver):
+    def test_case1(self, driver):
         pass
 
     @pytest.mark.parametrize("i, amount", [(1, "1111"), (2, "2222")])
-    def test_manual_input_card_number(self, driver, i, amount):
+    def test_manual_input_card_number1(self, driver, i, amount):
         """测试用例2：手动输入卡号的交易Demo，并且在最后进行截屏"""
         # 进入Credit - SALE, 输入金额
         WebDriverWait(driver, 10).until(
